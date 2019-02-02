@@ -1,12 +1,14 @@
 {
   "name": "Module Header",
-  "version": "1.0",
-  "description": "Move Module Links to Top of Page",
+  "version": "1.1",
+  "description": "Help extension for better class experience",
   "permissions": ["activeTab", "declarativeContent", "storage"],
-
   "content_scripts": [
     {
-      "matches": ["https://ilearn.csumb.edu/course/*"],
+      "matches": [
+        "https://ilearn.csumb.edu/course/*",
+        "https://www.mindtools.com/*"
+      ],
       "js": ["content_script.js"]
     }
   ],
